@@ -1,0 +1,32 @@
+{
+    "name": "luanardev/livewire-alert",
+    "homepage": "https://github.com/luanardev/livewire-alert",
+    "description": "Laravel Livewire Alert.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brian Simpokolwe",
+            "email": "bsimpokolwe@luanar.ac.mw"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^8.0",
+        "livewire/livewire": "^2.0"
+    },
+    "autoload": {
+		"files": [
+            "src/helpers.php"
+        ],
+		
+        "psr-4": {
+            "Luanardev\\LivewireAlert\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Luanardev\\LivewireAlert\\LivewireAlertProvider"
+            ]
+        }
+    }
+}
